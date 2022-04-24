@@ -247,7 +247,7 @@ theme = "LoveIt"
 关于更详细的完整配置可以查看 `LoveIt` 的配置文档 [完整配置](https://hugoloveit.com/zh-cn/theme-documentation-basics/#3-%E9%85%8D%E7%BD%AE)
 
 
-## 第三步 创建一篇你的文章 {#第三步-创建一篇你的文章}
+## 第四步 创建一篇你的文章 {#第四步-创建一篇你的文章}
 
 
 ### 使用 `ox-hugo` 插件, 将你写的 `org` 文档转换成 `Markdown` 文档 {#使用-ox-hugo-插件-将你写的-org-文档转换成-markdown-文档}
