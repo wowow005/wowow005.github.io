@@ -265,6 +265,94 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo serve
 </span></span></code></pre></div><p>如果渲染成功, 这时候命令行会返回一个预览网址, 复制到游览器打开即可预览你的文章.</p>
 <p>一般为: <a href="http://localhost:1313" target="_blank" rel="noopener noreffer">http://localhost:1313</a></p>
+<p>示意图如下:</p>
+<figure>
+</figure>
+
+<h2 id="第六步-将你的博客部署到-github">第六步 将你的博客部署到 Github</h2>
+<h3 id="创建一个个人的-github-pages-仓库">创建一个个人的 <code>Github Pages</code> 仓库</h3>
+<p>如下图所示, 要注意的就是仓库名要和你的 <code>Github</code> 用户名一致</p>
+<figure>
+</figure>
+
+<h3 id="构建博客网站">构建博客网站</h3>
+<p>你准备好部署你的博客时, 运行一下命令:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo
+</span></span></code></pre></div><p>会生成一个 <code>public</code> 目录, 其中包含你网站的所有静态内容和资源, 这个 <code>public</code> 目录
+就是你要部署到 <code>Github</code> 上的目录.</p>
+<h3 id="部署到-github">部署到 <code>Github</code></h3>
+<p>切换到 <code>public</code> 目录下, 我们执行一些熟悉的 <code>git</code> 操作</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 将 public 目录初始化为一个 git 本地仓库</span>
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 将所有内容添加到本地仓库</span>
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 提交到本地仓库</span>
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;My blog&#39;s first commit&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 关联到个人的远程仓库</span>
+</span></span><span class="line"><span class="cl">git remote add origin &lt;https://github.com/.../&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 推送到远程的 git 仓库</span>
+</span></span><span class="line"><span class="cl">git push origin main
+</span></span></code></pre></div><blockquote>
+<p>其实远程第一次提交的时候, 远程仓库有一个默认的 <code>README.md</code> 文件, 本地是没有的,
+我们可以先 <code>git pull --rebase</code> 一下再提交, 但是对于第一次提交, 由于没有什么有效
+文件, 其实强制提交 <code>git push -f origin main</code> 也是可以的</p>
+</blockquote>
+<p>部署的过程有些繁琐, 我们可以写一个 <code>Shell</code> 脚本来简化一下我们的操作, 脚本
+<code>deploy.sh</code> 如下:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> -e <span class="s2">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># build the project</span>
+</span></span><span class="line"><span class="cl">hugo
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> public
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;rebuilding site `date`&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -eq <span class="m">1</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl">  <span class="k">then</span> <span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># push source to github</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git push upstream main
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># come back to blog root</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ..
+</span></span></code></pre></div><p>执行脚本的话先更改一下权限再执行:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod <span class="m">700</span> ./deploy.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 执行脚本</span>
+</span></span><span class="line"><span class="cl">./deploy.sh
+</span></span></code></pre></div><h3 id="在-github-上等待-git-action-完成-访问你的博客">在 Github 上等待 <code>Git Action</code> 完成, 访问你的博客</h3>
+<p>是的, 你把 <code>public</code> 上传后, 需要等待 <code>Git Action</code> 完成 <code>Github pages</code> 的构建.</p>
+<figure>
+</figure>
+
+<p>之后访问你的 <code>Github pages</code> 网址即可看到你的博客啦.</p>
+<p>这个网址是 <a href="https://your_github_name.github.io" target="_blank" rel="noopener noreffer">https://your_github_name.github.io</a></p>
+<h2 id="结尾">结尾</h2>
+<p>由于评论区我还没弄好 🤔, 如有错误或疑问, 你可以给我发邮件, 或者通过 <a href="https://twitter.com/mushi63882090" target="_blank" rel="noopener noreffer">Twitter</a> 私信
+给我.</p>
+<h2 id="参考">参考</h2>
+<ol>
+<li><a href="https://gohugo.io/getting-started/quick-start/" target="_blank" rel="noopener noreffer">Hugo Quick Start</a></li>
+<li><a href="https://hugoloveit.com/zh-cn/" target="_blank" rel="noopener noreffer">Hugo 主题 LoveIt 的文档</a></li>
+<li><a href="https://jdhao.github.io/2018/10/10/hexo_to_hugo/" target="_blank" rel="noopener noreffer">把博客从 Hexo 迁移到 Hugo - jdhao&rsquo;s blog</a></li>
+<li><a href="https://zz2summer.github.io/github-pages-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener noreffer">Github Pages + Hugo 搭建个人博客</a></li>
+<li><a href="https://www.wenhui.space/docs/04-build-blog-site/org_mode_and_ox_hugo/" target="_blank" rel="noopener noreffer">使用org-mode 和 ox-hugo 写博客</a></li>
+<li><a href="https://superbear.github.io/post/2021/11/use-org-mode-and-hugo-to-write-blog/" target="_blank" rel="noopener noreffer">用Org Mode + Hugo写博客，并通过Github Action自动部署到Github Pages</a></li>
+</ol>
 ]]></description>
 </item></channel>
 </rss>

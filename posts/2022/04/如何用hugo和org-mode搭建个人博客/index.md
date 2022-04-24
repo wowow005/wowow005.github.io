@@ -356,3 +356,123 @@ hugo serve
 
 一般为: <http://localhost:1313>
 
+示意图如下:
+
+{{< figure src="/ox-hugo/博客预览.png" >}}
+
+
+## 第六步 将你的博客部署到 Github {#第六步-将你的博客部署到-github}
+
+
+### 创建一个个人的 `Github Pages` 仓库 {#创建一个个人的-github-pages-仓库}
+
+如下图所示, 要注意的就是仓库名要和你的 `Github` 用户名一致
+
+{{< figure src="/ox-hugo/创建一个gitpages仓库.png" >}}
+
+
+### 构建博客网站 {#构建博客网站}
+
+你准备好部署你的博客时, 运行一下命令:
+
+```bash
+hugo
+```
+
+会生成一个 `public` 目录, 其中包含你网站的所有静态内容和资源, 这个 `public` 目录
+就是你要部署到 `Github` 上的目录.
+
+
+### 部署到 `Github` {#部署到-github}
+
+切换到 `public` 目录下, 我们执行一些熟悉的 `git` 操作
+
+```bash
+# 将 public 目录初始化为一个 git 本地仓库
+git init
+
+# 将所有内容添加到本地仓库
+git add .
+
+# 提交到本地仓库
+git commit -m "My blog's first commit"
+
+# 关联到个人的远程仓库
+git remote add origin <https://github.com/.../>
+
+# 推送到远程的 git 仓库
+git push origin main
+```
+
+> 其实远程第一次提交的时候, 远程仓库有一个默认的 `README.md` 文件, 本地是没有的,
+> 我们可以先 `git pull --rebase` 一下再提交, 但是对于第一次提交, 由于没有什么有效
+> 文件, 其实强制提交 `git push -f origin main` 也是可以的
+
+部署的过程有些繁琐, 我们可以写一个 `Shell` 脚本来简化一下我们的操作, 脚本
+`deploy.sh` 如下:
+
+```bash
+#!/bin/bash
+
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+
+# build the project
+hugo
+
+cd public
+
+git add .
+
+msg="rebuilding site `date`"
+
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+
+git commit -m "$msg"
+
+# push source to github
+
+git push upstream main
+
+# come back to blog root
+
+cd ..
+```
+
+执行脚本的话先更改一下权限再执行:
+
+```bash
+chmod 700 ./deploy.sh
+
+# 执行脚本
+./deploy.sh
+```
+
+
+### 在 Github 上等待 `Git Action` 完成, 访问你的博客 {#在-github-上等待-git-action-完成-访问你的博客}
+
+是的, 你把 `public` 上传后, 需要等待 `Git Action` 完成 `Github pages` 的构建.
+
+{{< figure src="/ox-hugo/GitAction构建博客.png" >}}
+
+之后访问你的 `Github pages` 网址即可看到你的博客啦.
+
+这个网址是 <https://your_github_name.github.io>
+
+
+## 结尾 {#结尾}
+
+由于评论区我还没弄好 🤔, 如有错误或疑问, 你可以给我发邮件, 或者通过 [Twitter](https://twitter.com/mushi63882090) 私信
+给我.
+
+
+## 参考 {#参考}
+
+1.  [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
+2.  [Hugo 主题 LoveIt 的文档](https://hugoloveit.com/zh-cn/)
+3.  [把博客从 Hexo 迁移到 Hugo - jdhao's blog](https://jdhao.github.io/2018/10/10/hexo_to_hugo/)
+4.  [Github Pages + Hugo 搭建个人博客](https://zz2summer.github.io/github-pages-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)
+5.  [使用org-mode 和 ox-hugo 写博客](https://www.wenhui.space/docs/04-build-blog-site/org_mode_and_ox_hugo/)
+6.  [用Org Mode + Hugo写博客，并通过Github Action自动部署到Github Pages](https://superbear.github.io/post/2021/11/use-org-mode-and-hugo-to-write-blog/)
+
