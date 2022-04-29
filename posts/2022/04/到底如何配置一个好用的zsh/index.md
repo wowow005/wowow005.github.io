@@ -1,4 +1,4 @@
-# 到底如何配置一个好用的zsh?(不用onmyzsh)
+# 到底如何配置一个好用的zsh?(不用ohmyzsh)
 
 
 ## 关于本文 {#关于本文}
@@ -34,7 +34,9 @@
 我们的要求有两点, 一是它能显示中文和英文; 二是它能显示丰富的颜色.
 
 
-#### Windows 下我们用 `Windows Terminal` 为例 {#windows-下我们用-windows-terminal-为例}
+#### Windows 下我们以 `Windows Terminal` 为例 {#windows-下我们以-windows-terminal-为例}
 
-{{< figure src="https://image-1305288148.cos.ap-nanjing.myqcloud.com/Windows%20terminal.png" >}}
+{{< figure src="/ox-hugo/Windows terminal.png" >}}
+
+我们打开 `Mincrosoft Store` 搜索 `Windows Terminal` 点击安装即可.
 

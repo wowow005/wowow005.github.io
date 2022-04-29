@@ -7,7 +7,7 @@
             <webMaster>goodhelper007@outlook.com (Mushi)</webMaster><lastBuildDate>Tue, 26 Apr 2022 19:19:00 &#43;0800</lastBuildDate>
             <atom:link href="https://wowow005.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>到底如何配置一个好用的zsh?(不用onmyzsh)</title>
+    <title>到底如何配置一个好用的zsh?(不用ohmyzsh)</title>
     <link>https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/</link>
     <pubDate>Tue, 26 Apr 2022 19:19:00 &#43;0800</pubDate><author>
         <name>Mushi</name>
@@ -56,10 +56,11 @@
 <h2 id="第一步" class="headerLink">
     <a href="#%e7%ac%ac%e4%b8%80%e6%ad%a5" class="header-mark"></a>第一步</h2><h3 id="安装一个好用的终端模拟器" class="headerLink">
     <a href="#%e5%ae%89%e8%a3%85%e4%b8%80%e4%b8%aa%e5%a5%bd%e7%94%a8%e7%9a%84%e7%bb%88%e7%ab%af%e6%a8%a1%e6%8b%9f%e5%99%a8" class="header-mark"></a>安装一个好用的终端模拟器</h3><p>我们的要求有两点, 一是它能显示中文和英文; 二是它能显示丰富的颜色.</p>
-<h4 id="windows-下我们用-windows-terminal-为例" class="headerLink">
-    <a href="#windows-%e4%b8%8b%e6%88%91%e4%bb%ac%e7%94%a8-windows-terminal-%e4%b8%ba%e4%be%8b" class="header-mark"></a>Windows 下我们用 <code>Windows Terminal</code> 为例</h4><figure>
+<h4 id="windows-下我们以-windows-terminal-为例" class="headerLink">
+    <a href="#windows-%e4%b8%8b%e6%88%91%e4%bb%ac%e4%bb%a5-windows-terminal-%e4%b8%ba%e4%be%8b" class="header-mark"></a>Windows 下我们以 <code>Windows Terminal</code> 为例</h4><figure>
 </figure>
 
+<p>我们打开 <code>Mincrosoft Store</code> 搜索 <code>Windows Terminal</code> 点击安装即可.</p>
 ]]></description>
 </item><item>
     <title>如何用 hugo 和 org-mode 搭建个人博客</title>

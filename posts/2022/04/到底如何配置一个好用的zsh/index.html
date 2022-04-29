@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
-    <title class="pjax-title">到底如何配置一个好用的zsh?(不用onmyzsh) - 牧师的博客</title><meta name="Description" content="Welcome to Mushi&#39;s blog."><meta property="og:title" content="到底如何配置一个好用的zsh?(不用onmyzsh)" />
+    <title class="pjax-title">到底如何配置一个好用的zsh?(不用ohmyzsh) - 牧师的博客</title><meta name="Description" content="Welcome to Mushi&#39;s blog."><meta property="og:title" content="到底如何配置一个好用的zsh?(不用ohmyzsh)" />
 <meta property="og:description" content="关于本文这篇文章想要探究如何在你的电脑上配置一个好用的命令行工具 zsh, 我不会使用 ohmyzsh, 而且我想尽可能覆盖到所有的操作系统. 本教程适合 Windows, Linux, Mac 用户. 需要" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-26T19:19:00+08:00" />
-<meta property="article:modified_time" content="2022-04-26T21:23:44+08:00" /><meta property="og:site_name" content="牧师的博客" />
+<meta property="article:modified_time" content="2022-04-30T00:09:16+08:00" /><meta property="og:site_name" content="牧师的博客" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="到底如何配置一个好用的zsh?(不用onmyzsh)"/>
+<meta name="twitter:title" content="到底如何配置一个好用的zsh?(不用ohmyzsh)"/>
 <meta name="twitter:description" content="关于本文这篇文章想要探究如何在你的电脑上配置一个好用的命令行工具 zsh, 我不会使用 ohmyzsh, 而且我想尽可能覆盖到所有的操作系统. 本教程适合 Windows, Linux, Mac 用户. 需要"/>
 <meta name="application-name" content="Mushi&#39;s blog">
 <meta name="apple-mobile-web-app-title" content="Mushi&#39;s blog">
@@ -24,13 +24,13 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "到底如何配置一个好用的zsh?(不用onmyzsh)",
+        "headline": "到底如何配置一个好用的zsh?(不用ohmyzsh)",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/wowow005.github.io\/posts\/2022\/04\/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh\/"
-        },"genre": "posts","keywords": "shell, tools","wordcount":  298 ,
-        "url": "https:\/\/wowow005.github.io\/posts\/2022\/04\/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh\/","datePublished": "2022-04-26T19:19:00+08:00","dateModified": "2022-04-26T21:23:44+08:00","publisher": {
+        },"genre": "posts","keywords": "shell, tools","wordcount":  315 ,
+        "url": "https:\/\/wowow005.github.io\/posts\/2022\/04\/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh\/","datePublished": "2022-04-26T19:19:00+08:00","dateModified": "2022-04-30T00:09:16+08:00","publisher": {
             "@type": "Organization",
             "name": "Mushi"},"author": {
                 "@type": "Person",
@@ -39,7 +39,7 @@
     }
     </script></head>
 
-<body header-desktop="" header-mobile=""><script type="text/javascript">
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
         function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
         function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
         function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
@@ -67,8 +67,14 @@
                         <span class="search-button search-loading" id="search-loading-desktop">
                             <i class="fas fa-spinner fa-fw fa-spin"></i>
                         </span>
-                    </span><a href="#" onclick="return false;" class="menu-item theme-switch" title="切换主题">
+                    </span><a href="#" onclick="return false;" class="menu-item theme-select" title="切换主题">
                     <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="切换主题">
+                        <option value="light">浅色</option>
+                        <option value="dark">深色</option>
+                        <option value="black">黑色</option>
+                        <option value="auto">跟随系统</option>
+                    </select>
                 </a></div>
         </div>
     </div>
@@ -98,8 +104,14 @@
                     <a href="#" onclick="return false;" class="search-cancel" id="search-cancel-mobile">
                         取消
                     </a>
-                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="#" onclick="return false;" class="menu-item theme-switch" title="切换主题">
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="#" onclick="return false;" class="menu-item theme-select" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="切换主题">
+                    <option value="light">浅色</option>
+                    <option value="dark">深色</option>
+                    <option value="black">黑色</option>
+                    <option value="auto">跟随系统</option>
+                </select>
             </a><a href="#" onclick="return false;" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
                     <select class="language-select" title="Select Language" onchange="location = this.value;"><option value="/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/" selected>简体中文</option></select>
                 </a></div>
@@ -112,11 +124,11 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">到底如何配置一个好用的zsh?(不用onmyzsh)</h1><div class="post-meta">
+            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">到底如何配置一个好用的zsh?(不用ohmyzsh)</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="https://wowow005.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author">Mushi</a>
                 </span>&nbsp;<span class="post-category">收录于 </span>&nbsp;<span class="post-category">类别 <a href="/categories/learning/"><i class="far fa-folder fa-fw"></i>Learning</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="26264-04-26">26264-04-26</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="26264-04-26">26264-04-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 298 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="26264-04-26">26264-04-26</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="30304-04-30">30304-04-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 315 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="true">
                 <div class="details-summary toc-title">
@@ -134,7 +146,7 @@
           <ul>
             <li><a href="#安装一个好用的终端模拟器">安装一个好用的终端模拟器</a>
               <ul>
-                <li><a href="#windows-下我们用-windows-terminal-为例">Windows 下我们用 <code>Windows Terminal</code> 为例</a></li>
+                <li><a href="#windows-下我们以-windows-terminal-为例">Windows 下我们以 <code>Windows Terminal</code> 为例</a></li>
               </ul>
             </li>
           </ul>
@@ -187,17 +199,18 @@
 <h2 id="第一步" class="headerLink">
     <a href="#%e7%ac%ac%e4%b8%80%e6%ad%a5" class="header-mark"></a>第一步</h2><h3 id="安装一个好用的终端模拟器" class="headerLink">
     <a href="#%e5%ae%89%e8%a3%85%e4%b8%80%e4%b8%aa%e5%a5%bd%e7%94%a8%e7%9a%84%e7%bb%88%e7%ab%af%e6%a8%a1%e6%8b%9f%e5%99%a8" class="header-mark"></a>安装一个好用的终端模拟器</h3><p>我们的要求有两点, 一是它能显示中文和英文; 二是它能显示丰富的颜色.</p>
-<h4 id="windows-下我们用-windows-terminal-为例" class="headerLink">
-    <a href="#windows-%e4%b8%8b%e6%88%91%e4%bb%ac%e7%94%a8-windows-terminal-%e4%b8%ba%e4%be%8b" class="header-mark"></a>Windows 下我们用 <code>Windows Terminal</code> 为例</h4><figure><img src="https://image-1305288148.cos.ap-nanjing.myqcloud.com/Windows%20terminal.png"/>
+<h4 id="windows-下我们以-windows-terminal-为例" class="headerLink">
+    <a href="#windows-%e4%b8%8b%e6%88%91%e4%bb%ac%e4%bb%a5-windows-terminal-%e4%b8%ba%e4%be%8b" class="header-mark"></a>Windows 下我们以 <code>Windows Terminal</code> 为例</h4><figure><img src="/ox-hugo/Windows%20terminal.png"/>
 </figure>
 
+<p>我们打开 <code>Mincrosoft Store</code> 搜索 <code>Windows Terminal</code> 点击安装即可.</p>
 </div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 26264-04-26</span>
+                <span>更新于 30304-04-30</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -205,7 +218,7 @@
             <div class="post-info-md"><span><a class="link-to-mardown" href=/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
                     </span></div>
             <div class="post-info-share">
-                <span><a href="#" onclick="return false;" title="分享到 Twitter" data-sharer="twitter" data-url="https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/" data-title="到底如何配置一个好用的zsh?(不用onmyzsh)" data-via="mushi63882090" data-hashtags="shell,tools"><i class="fab fa-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/" data-title="到底如何配置一个好用的zsh?(不用onmyzsh)" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Reddit" data-sharer="reddit" data-url="https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/"><i class="fab fa-reddit fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 微博" data-sharer="weibo" data-url="https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/" data-title="到底如何配置一个好用的zsh?(不用onmyzsh)"><i class="fab fa-weibo fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Blogger" data-sharer="blogger" data-url="https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/" data-title="到底如何配置一个好用的zsh?(不用onmyzsh)" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Evernote" data-sharer="evernote" data-url="https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/" data-title="到底如何配置一个好用的zsh?(不用onmyzsh)"><i class="fab fa-evernote fa-fw"></i></a></span>
+                <span><a href="#" onclick="return false;" title="分享到 Twitter" data-sharer="twitter" data-url="https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/" data-title="到底如何配置一个好用的zsh?(不用ohmyzsh)" data-via="mushi63882090" data-hashtags="shell,tools"><i class="fab fa-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/" data-title="到底如何配置一个好用的zsh?(不用ohmyzsh)" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Reddit" data-sharer="reddit" data-url="https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/"><i class="fab fa-reddit fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 微博" data-sharer="weibo" data-url="https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/" data-title="到底如何配置一个好用的zsh?(不用ohmyzsh)"><i class="fab fa-weibo fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Blogger" data-sharer="blogger" data-url="https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/" data-title="到底如何配置一个好用的zsh?(不用ohmyzsh)" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Evernote" data-sharer="evernote" data-url="https://wowow005.github.io/posts/2022/04/%E5%88%B0%E5%BA%95%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%94%A8%E7%9A%84zsh/" data-title="到底如何配置一个好用的zsh?(不用ohmyzsh)"><i class="fab fa-evernote fa-fw"></i></a></span>
             </div>
         </div>
     </div>
@@ -219,7 +232,9 @@
 
     <div class="post-nav"><a href="/posts/2022/04/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E5%92%8Corg-mode%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="prev" rel="prev" title="如何用 hugo 和 org-mode 搭建个人博客"><i class="fas fa-angle-left fa-fw"></i>如何用 hugo 和 org-mode 搭建个人博客</a></div>
 </div>
-<div id="comments"></div></article></div>
+<div id="comments"><div id="giscus"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://giscus.app/">giscus</a>.
+            </noscript></div></article></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
                     由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.95.0-DEV">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreffer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
@@ -236,7 +251,7 @@
         </a>
     </div><div class="assets"><script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.fill%2CArray.prototype.find%2CArray.from%2CIntersectionObserver%2CMath.sign%2CObject.assign%2CPromise%2CObject.entries%2Chtml5shiv%2CObject.values%2Cfetch%2CElement.prototype.after"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/topbar/topbar.min.js"></script><script type="text/javascript" src="/lib/pjax/pjax.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
 
-<div class="pjax-assets"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":20},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"},"sharerjs":true};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+<div class="pjax-assets"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":20},"comment":{"giscus":{"darkTheme":"dark","dataCategory":"Announcements","dataCategoryId":"DIC_kwDOHQdstc4CO2jI","dataEmitMetadata":"0","dataInputPosition":"top","dataLang":"zh-CN","dataMapping":"pathname","dataReactionsEnabled":"1","dataRepo":"wowow005/blogcomment","dataRepoId":"R_kgDOHQdstQ","lightTheme":"light"}},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"},"sharerjs":true};</script><script type="text/javascript" src="/js/giscus.min.js" defer></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
         <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript></div>
 </body>
 
