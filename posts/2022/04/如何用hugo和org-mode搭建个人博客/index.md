@@ -463,8 +463,7 @@ chmod 700 ./deploy.sh
 
 ## 结尾 {#结尾}
 
-由于评论区我还没弄好 🤔, 如有错误或疑问, 你可以给我发邮件, 或者通过 [Twitter](https://twitter.com/mushi63882090) 私信
-给我.
+可以考虑使用 DoIt 替代 LoveIt
 
 
 ## 参考 {#参考}
