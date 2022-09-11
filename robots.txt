@@ -56,6 +56,6 @@ User-agent: ZoominfoBot
 Disallow: /
 
 User-agent: *
-Allow: *
+Allow: /
 
 Sitemap: https://wowow005.github.io/en/sitemap.xml

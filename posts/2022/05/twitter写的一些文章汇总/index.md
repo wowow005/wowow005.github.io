@@ -3,9 +3,9 @@
 
 ## 关于 {#关于}
 
-主要是看到了这篇文章 [利用 Twitter 进行低成本写作](http://blog.jiayuanzhang.com/post/low-cost-writing-with-twitter/) 后, 自己也想利用 Twitter 的
+主要是看到了这篇文章 [利用 Twitter 进行低成本写作](http://blog.jiayuanzhang.com/post/low-cost-writing-with-twitter/) 后，自己也想利用 Twitter 的
 [Threadreader](https://threadreaderapp.com/) 写一
-些碎片化的文章, 实际用过之后体验还是不错的. 下面是我 2022年 写的一些文章的索引👇🏻
+些碎片化的文章，实际用过之后体验还是不错的。下面是我 2022年 写的一些文章的索引👇🏻
 
 
 ### 4 月 {#4-月}
