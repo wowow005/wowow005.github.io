@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://wowow005.github.io/categories/</loc><lastmod>2022-09-22T21:36:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://wowow005.github.io/categories/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://wowow005.github.io/en/categories/"
@@ -11,9 +11,12 @@
                     hreflang="zh-cn"
                     href="https://wowow005.github.io/categories/"
                     /></url><url>
-            <loc>https://wowow005.github.io/categories/learning/</loc><lastmod>2022-09-22T21:36:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/posts/</loc><lastmod>2022-09-22T21:36:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/tags/</loc><lastmod>2022-09-22T21:36:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://wowow005.github.io/categories/learning/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/tags/linux/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/posts/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/tags/shell/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/posts/2022/11/shell-terminal-and-others/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/tags/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://wowow005.github.io/en/tags/"
@@ -22,8 +25,7 @@
                     hreflang="zh-cn"
                     href="https://wowow005.github.io/tags/"
                     /></url><url>
-            <loc>https://wowow005.github.io/tags/writing/</loc><lastmod>2022-09-22T21:36:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/</loc><lastmod>2022-09-22T21:36:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://wowow005.github.io/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://wowow005.github.io/en/"
@@ -32,10 +34,11 @@
                     hreflang="zh-cn"
                     href="https://wowow005.github.io/"
                     /></url><url>
-            <loc>https://wowow005.github.io/posts/2022/09/%E6%88%91%E7%9A%84%E4%B8%AD%E6%96%87%E5%86%99%E4%BD%9C%E8%A7%84%E8%8C%83/</loc><lastmod>2022-09-22T21:36:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/posts/2022/05/twitter%E5%86%99%E7%9A%84%E4%B8%80%E4%BA%9B%E6%96%87%E7%AB%A0%E6%B1%87%E6%80%BB/</loc><lastmod>2022-08-23T22:19:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-            <loc>https://wowow005.github.io/categories/life/</loc><lastmod>2022-08-23T22:19:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-            <loc>https://wowow005.github.io/tags/twitter/</loc><lastmod>2022-08-23T22:19:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://wowow005.github.io/tags/writing/</loc><lastmod>2022-09-22T21:36:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://wowow005.github.io/posts/2022/09/%E6%88%91%E7%9A%84%E4%B8%AD%E6%96%87%E5%86%99%E4%BD%9C%E8%A7%84%E8%8C%83/</loc><lastmod>2022-09-22T21:36:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://wowow005.github.io/posts/2022/05/twitter%E5%86%99%E7%9A%84%E4%B8%80%E4%BA%9B%E6%96%87%E7%AB%A0%E6%B1%87%E6%80%BB/</loc><lastmod>2022-08-23T22:19:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://wowow005.github.io/categories/life/</loc><lastmod>2022-08-23T22:19:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://wowow005.github.io/tags/twitter/</loc><lastmod>2022-08-23T22:19:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://wowow005.github.io/tags/blog/</loc><lastmod>2022-06-27T12:48:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://wowow005.github.io/tags/emacs/</loc><lastmod>2022-06-27T12:48:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://wowow005.github.io/tags/org/</loc><lastmod>2022-06-27T12:48:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

@@ -4,7 +4,52 @@
         <link>https://wowow005.github.io/posts/</link>
         <description>所有文章 | 牧师的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>goodhelper007@outlook.com (Mushi)</managingEditor>
-            <webMaster>goodhelper007@outlook.com (Mushi)</webMaster><lastBuildDate>Thu, 22 Sep 2022 19:36:00 &#43;0800</lastBuildDate><atom:link href="https://wowow005.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>goodhelper007@outlook.com (Mushi)</webMaster><lastBuildDate>Sun, 06 Nov 2022 15:02:00 &#43;0800</lastBuildDate><atom:link href="https://wowow005.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Shell Terminal Console 词语解释</title>
+    <link>https://wowow005.github.io/posts/2022/11/shell-terminal-and-others/</link>
+    <pubDate>Sun, 06 Nov 2022 15:02:00 &#43;0800</pubDate><author>
+        <name>Mushi</name>
+    </author><guid>https://wowow005.github.io/posts/2022/11/shell-terminal-and-others/</guid>
+    <description><![CDATA[<h2 id="shell" class="headerLink">
+    <a href="#shell" class="header-mark"></a>Shell</h2><p>Shell 的中文应该叫做 “壳” 程序，区别于 “核”。它的主要工作就是解析命令 (command interpreter)。
+Shell 为操作系统和用户之间传递命令，如果操作系统没有运行图形界面 Shell 会作为默认的进程运行，
+这时你只能通过 Shell 操控操作系统去干事。一般来说这里的图形界面也是一个软件。</p>
+<p>常见的 Shell 有：</p>
+<ul>
+<li>sh</li>
+<li>bash</li>
+<li>csh</li>
+<li>ksh</li>
+<li>zsh</li>
+<li>fish</li>
+</ul>
+<h2 id="terminal" class="headerLink">
+    <a href="#terminal" class="header-mark"></a>Terminal</h2><p>Terminal 的中文应该叫做计算机 “终端”，早期的计算机终端一般使用机电的电传打字机也叫 TTY (Teletypewriter)。
+电传打字机一开始是作为电报的终端使用的，后来股票电报机大规模使用。一开始计算机并不能和 tty 相连，
+直到 1959 年 DEC 公司生产的 PDP-1 电脑， tty 才可以通过串口线连接计算机。tty输入靠键盘，输出靠的是
+打印的纸张或纸带。</p>
+<p>那时使用的计算机如下图所示：</p>
+<figure>
+</figure>
+
+<p>后来的终端逐渐发展为键盘和显示器。</p>
+<p>目前来说我们已经在使用各种图形化界面的操作系统，“终端” 已经成为操作系统中安装的一个程序了，这种所谓的 “终端”
+我们可以叫它 “终端模拟程序” (Terminal Emulators)。</p>
+<p>常见的 Terminal Emulators 有：</p>
+<ul>
+<li>Windows 上的 cmd.exe 和 powershell.exe 这样的应用程序，cmd 和 powershell 本身还是 Shell。</li>
+<li>macOS 上的 Terminal 或是自己安装的 iTerm2 这样的应用程序，还有我个人最喜欢的 kitty。</li>
+<li>Linux 上的就更多了，比如 Gnome 桌面环境 的 gnome-terminal，KDE 桌面环境的 konsole, 开源的 Alacritty、Hyper 等等。</li>
+</ul>
+<h2 id="console" class="headerLink">
+    <a href="#console" class="header-mark"></a>Console</h2><p>在以前指的是主机 MainFrame 的控制面板，上面有显示寄存器的指示灯和操作寄存器的开关，它与电脑主机紧密结合，无法远程操作。</p>
+<p>Console 和 Terminal 如下图所示：</p>
+<figure>
+</figure>
+
+<p>现在我们一般所说的 Console 大概指的是个人电脑中的设置相关的程序。</p>
+]]></description>
+</item><item>
     <title>我的中文写作规范</title>
     <link>https://wowow005.github.io/posts/2022/09/%E6%88%91%E7%9A%84%E4%B8%AD%E6%96%87%E5%86%99%E4%BD%9C%E8%A7%84%E8%8C%83/</link>
     <pubDate>Thu, 22 Sep 2022 19:36:00 &#43;0800</pubDate><author>
