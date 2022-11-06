@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://wowow005.github.io/categories/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://wowow005.github.io/categories/</loc><lastmod>2022-11-06T15:25:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://wowow005.github.io/en/categories/"
@@ -11,12 +11,12 @@
                     hreflang="zh-cn"
                     href="https://wowow005.github.io/categories/"
                     /></url><url>
-            <loc>https://wowow005.github.io/categories/learning/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/tags/linux/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/posts/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/tags/shell/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/posts/2022/11/shell-terminal-and-others/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/tags/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://wowow005.github.io/categories/learning/</loc><lastmod>2022-11-06T15:25:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/tags/linux/</loc><lastmod>2022-11-06T15:25:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/posts/</loc><lastmod>2022-11-06T15:25:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/tags/shell/</loc><lastmod>2022-11-06T15:25:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/posts/2022/11/shell-terminal-and-others/</loc><lastmod>2022-11-06T15:25:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/tags/</loc><lastmod>2022-11-06T15:25:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://wowow005.github.io/en/tags/"
@@ -25,7 +25,7 @@
                     hreflang="zh-cn"
                     href="https://wowow005.github.io/tags/"
                     /></url><url>
-            <loc>https://wowow005.github.io/</loc><lastmod>2022-11-06T15:15:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://wowow005.github.io/</loc><lastmod>2022-11-06T15:25:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://wowow005.github.io/en/"
