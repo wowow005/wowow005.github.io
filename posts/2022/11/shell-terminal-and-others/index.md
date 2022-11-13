@@ -50,3 +50,10 @@ Console 和 Terminal 如下图所示：
 
 现在我们一般所说的 Console 大概指的是个人电脑中的设置相关的程序。
 
+
+## 参考链接 {#参考链接}
+
+-   [命令行界面 (CLI)、终端 (Terminal)、Shell、TTY，傻傻分不清楚？](https://segmentfault.com/a/1190000016129862)
+-   [What is the exact difference between a 'terminal', a 'shell', a 'tty' and a 'console'?](https://unix.stackexchange.com/questions/4126/what-is-the-exact-difference-between-a-terminal-a-shell-a-tty-and-a-con)
+-   [tty 到底是什么？](https://martins3.github.io/kernel/tty.html)
+

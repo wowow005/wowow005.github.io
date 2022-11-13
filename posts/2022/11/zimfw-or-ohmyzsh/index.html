@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title class="pjax-title">mushi 的 zsh 配置 (不用 ohmyzsh 而用 zim) - 牧师的博客</title><meta name="Description" content="Welcome to Mushi&#39;s blog."><meta property="og:title" content="mushi 的 zsh 配置 (不用 ohmyzsh 而用 zim)" />
+<meta property="og:description" content="ohmyzsh or zim？ohmyzsh（简称omz） 是一个很流行的 zsh 框架，用于管理 zsh 的配置文件。 zim 和 omz 发挥同样的作用，只是它比 omz 快很多，通过下面这张图可" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wowow005.github.io/posts/2022/11/zimfw-or-ohmyzsh/" /><meta property="og:image" content="https://wowow005.github.io/picture/mushi005_green.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-11T06:02:00+08:00" />
+<meta property="article:modified_time" content="2022-11-13T21:43:56+08:00" /><meta property="og:site_name" content="牧师的博客" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://wowow005.github.io/picture/mushi005_green.png"/>
+
+<meta name="twitter:title" content="mushi 的 zsh 配置 (不用 ohmyzsh 而用 zim)"/>
+<meta name="twitter:description" content="ohmyzsh or zim？ohmyzsh（简称omz） 是一个很流行的 zsh 框架，用于管理 zsh 的配置文件。 zim 和 omz 发挥同样的作用，只是它比 omz 快很多，通过下面这张图可"/>
+<meta name="application-name" content="Mushi&#39;s blog">
+<meta name="apple-mobile-web-app-title" content="Mushi&#39;s blog">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/avtar/android-chrome-512x512.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://wowow005.github.io/posts/2022/11/zimfw-or-ohmyzsh/" /><link rel="prev" href="https://wowow005.github.io/posts/2022/11/shell-terminal-and-others/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "mushi 的 zsh 配置 (不用 ohmyzsh 而用 zim)",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/wowow005.github.io\/posts\/2022\/11\/zimfw-or-ohmyzsh\/"
+        },"image": ["https:\/\/wowow005.github.io\/avtar\/android-chrome-512x512.png"],"genre": "posts","keywords": "shell, linux, mac","wordcount":  1419 ,
+        "url": "https:\/\/wowow005.github.io\/posts\/2022\/11\/zimfw-or-ohmyzsh\/","datePublished": "2022-11-11T06:02:00+08:00","dateModified": "2022-11-13T21:43:56+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Mushi"
+            },"description": ""
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="牧师的博客"><img
+        class="lazyload logo"
+        data-src="/icon/header.png"
+        data-srcset="/icon/header.png, /icon/header.png 1.5x, /icon/header.png 2x"
+        data-sizes="auto"
+        alt="/icon/header.png"
+        title="/icon/header.png">Mushi&#39;s Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="#" onclick="return false;" class="menu-item language" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" title="Select Language" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/2022/11/zimfw-or-ohmyzsh/" selected>简体中文</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-select" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="切换主题">
+                        <option value="light">浅色</option>
+                        <option value="dark">深色</option>
+                        <option value="black">黑色</option>
+                        <option value="auto">跟随系统</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="牧师的博客"><img
+        class="lazyload logo"
+        data-src="/icon/header.png"
+        data-srcset="/icon/header.png, /icon/header.png 1.5x, /icon/header.png 2x"
+        data-sizes="auto"
+        alt="/icon/header.png"
+        title="/icon/header.png">Mushi&#39;s Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" onclick="return false;" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="#" onclick="return false;" class="menu-item theme-select" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="切换主题">
+                    <option value="light">浅色</option>
+                    <option value="dark">深色</option>
+                    <option value="black">黑色</option>
+                    <option value="auto">跟随系统</option>
+                </select>
+            </a><a href="#" onclick="return false;" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" title="Select Language" onchange="location = this.value;"><option value="/posts/2022/11/zimfw-or-ohmyzsh/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">mushi 的 zsh 配置 (不用 ohmyzsh 而用 zim)</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="https://wowow005.github.io/" title="Author" target="_blank" rel="noopener noreferrer author" class="author">Mushi</a>
+                </span>&nbsp;<span class="post-category">收录于 </span>&nbsp;<span class="post-category">类别 <a href="/categories/learning/"><i class="far fa-folder fa-fw"></i>Learning</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-11-11">2022-11-11</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-11-13">2022-11-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1419 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="true">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#ohmyzsh-or-zim">ohmyzsh or zim？</a></li>
+    <li><a href="#准备阶段">准备阶段</a>
+      <ul>
+        <li><a href="#卸载-ohmyzsh">卸载 ohmyzsh</a></li>
+        <li><a href="#安装-zsh">安装 zsh</a></li>
+        <li><a href="#安装-nerd-fonts">安装 Nerd Fonts</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装-zim">安装 zim</a></li>
+    <li><a href="#使用-zim">使用 zim</a></li>
+    <li><a href="#卸载-zim">卸载 zim</a></li>
+    <li><a href="#一个安装-zim-的例子">一个安装 zim 的例子</a></li>
+    <li><a href="#参考链接">参考链接</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="ohmyzsh-or-zim" class="headerLink">
+    <a href="#ohmyzsh-or-zim" class="header-mark"></a>ohmyzsh or zim？</h2><p><a href="https://ohmyz.sh/" target="_blank" rel="noopener noreferrer">ohmyzsh</a>（简称omz） 是一个很流行的 zsh 框架，用于管理 zsh 的配置文件。</p>
+<p><a href="https://zimfw.sh/" target="_blank" rel="noopener noreferrer">zim</a> 和 omz 发挥同样的作用，只是它比 omz 快很多，通过下面这张图可以看出 zim 的速度优势。</p>
+<figure><img src="/ox-hugo/zimspeed.svg"/>
+</figure>
+
+<h2 id="准备阶段" class="headerLink">
+    <a href="#%e5%87%86%e5%a4%87%e9%98%b6%e6%ae%b5" class="header-mark"></a>准备阶段</h2><h3 id="卸载-ohmyzsh" class="headerLink">
+    <a href="#%e5%8d%b8%e8%bd%bd-ohmyzsh" class="header-mark"></a>卸载 ohmyzsh</h3><p>如果你想卸载 omz，可以这样做：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo chmod u+x ~/.oh-my-zsh/tools/uninstall.sh
+</span></span><span class="line"><span class="cl">~/.oh-my-zsh/tools/uninstall.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="安装-zsh" class="headerLink">
+    <a href="#%e5%ae%89%e8%a3%85-zsh" class="header-mark"></a>安装 zsh</h3><p>我们需要在设备上安装 zsh, macOS 自从 macOS 10.15 Catalina 开始 zsh 就成为了默认的 shell，
+所以你无需更改。而一般 Linux 发行版默认使用的仍是 bash，你可以查看 <code>/etc/shells</code> 确认你使用的
+Linux 发行版安装了哪些 shells。</p>
+<p>如果没有安装的话，最好通过一些包管理器安装 zsh。</p>
+<p>比如在 Ubuntu 上通过 apt 安装 zsh，接着将默认 Shell 切换至 zsh：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo chsh -s /bin/zsh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>重新登录后，运行 <code>echo $SHELL</code> 检查一下输出是不是 <code>/bin/zsh</code></p>
+<h3 id="安装-nerd-fonts" class="headerLink">
+    <a href="#%e5%ae%89%e8%a3%85-nerd-fonts" class="header-mark"></a>安装 Nerd Fonts</h3><p><a href="https://www.nerdfonts.com/" target="_blank" rel="noopener noreferrer">Nerd Fonts</a> 是一个为开发人员准备的字体集合，里面的字体增添了各种实用的图标，让命令行可以更加美观。</p>
+<p>虽然 Nerd Fonts 不是必须的，但经常用命令行的肯定会喜欢 Nerd Fonts 这种打包了许多图标的字体。</p>
+<p>在 macOS 上安装 Nerd Fonts 很方便，你可以通过 <a href="https://brew.sh/" target="_blank" rel="noopener noreferrer">Homebrew</a> 这个包管理器来安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">brew tap homebrew/cask-fonts <span class="o">&amp;&amp;</span>
+</span></span><span class="line"><span class="cl">brew install --cask font-&lt;FONT NAME&gt;-nerd-font
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在其他 Linux 发行版中，如 ArchLinux 中你可以通过 <code>pacman</code> 在 AUR 这个用户打包上传的仓库中安装 Nerd Fonts。
+有些 Linux 发行版使用的 Gnome 字体管理器可能并不好用，你最好手动安装字体，一般来说我的做法如下：</p>
+<p>先挑选自己中意的字体压缩包，在游览器中下载到本地并解压得到一个字体文件夹。
+在用户目录中创建一个 <code>.fonts</code> 文件夹，把解压得到的字体文件夹放到这个文件夹下。
+运行 <code>fc-chache -fv</code> 刷新字体缓存文件。</p>
+<p>安装后在使用的 Terminal 中设置字体即可。</p>
+<p>我用过的一些 Nerd Fonts 如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">Caskaydia Cove Nerd Font
+</span></span><span class="line"><span class="cl">FiraCode Nerd Font
+</span></span><span class="line"><span class="cl">Hack Nerd Font
+</span></span><span class="line"><span class="cl">JetBrainsMono Nerd Font
+</span></span><span class="line"><span class="cl">Meslo Nerd Font
+</span></span><span class="line"><span class="cl">Noto Nerd Font
+</span></span><span class="line"><span class="cl">Sauce Code Nerd Font
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="安装-zim" class="headerLink">
+    <a href="#%e5%ae%89%e8%a3%85-zim" class="header-mark"></a>安装 zim</h2><p>我们可以自动安装或者手动安装，自动安装如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># curl</span>
+</span></span><span class="line"><span class="cl">curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh <span class="p">|</span> zsh
+</span></span><span class="line"><span class="cl"><span class="c1"># wget</span>
+</span></span><span class="line"><span class="cl">wget -nv -O - https://raw.githubusercontent.com/zimfw/install/master/install.zsh <span class="p">|</span> zsh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>手动安装请参考：<a href="https://github.com/zimfw/zimfw#manual-installation" target="_blank" rel="noopener noreferrer">https://github.com/zimfw/zimfw#manual-installation</a></p>
+<h2 id="使用-zim" class="headerLink">
+    <a href="#%e4%bd%bf%e7%94%a8-zim" class="header-mark"></a>使用 zim</h2><p>我们通过修改 <code>~/.zimrc</code> 这个文件来启动 zim 的功能。</p>
+<p>想要修改主题就在 <code>~/.zimrc</code> 中写入 <code>zmodule &lt;theme&gt;</code> 即可</p>
+<p>想要引入新的功能就在 <code>~/.zimrc</code> 中写入 <code>zmodule &lt;modules&gt;</code> 即可</p>
+<p>主题列表和模组列表可以在 <a href="https://zimfw.sh/docs/themes/" target="_blank" rel="noopener noreferrer">Themes</a> 和 <a href="https://zimfw.sh/docs/modules/" target="_blank" rel="noopener noreferrer">Modules</a> 上查看。</p>
+<h2 id="卸载-zim" class="headerLink">
+    <a href="#%e5%8d%b8%e8%bd%bd-zim" class="header-mark"></a>卸载 zim</h2><p>手动删除 <code>~/.zim</code> 文件夹和 <code>~/.zimrc</code> 文件，再删除掉 zim 往 <code>~/.zshrc</code> 中添加的内容即可。</p>
+<h2 id="一个安装-zim-的例子" class="headerLink">
+    <a href="#%e4%b8%80%e4%b8%aa%e5%ae%89%e8%a3%85-zim-%e7%9a%84%e4%be%8b%e5%ad%90" class="header-mark"></a>一个安装 zim 的例子</h2><p>我在 Fedora 中安装了 zsh，切换到 zsh 后它会自动生成一些 zsh 的启动文件如下图：</p>
+<figure><img src="/ox-hugo/zsh-startfiles.png"/>
+</figure>
+
+<p>由于我是在 docker 中演示的，所以 <code>.zshrc</code> 文件中没什么重要的设置，我可以把 <code>.zshrc</code> 文件删除，
+让 zim 给我创建一个新的 <code>.zshrc</code> 文件，如果你没有删除的话，安装后 zim 将把它的设置写入在 <code>.zshrc</code>
+这个文件的前面。</p>
+<p>你可能已经在 <code>.zshrc</code> 中写入了一些修改 Shell 环境变量的一些设置，或者是一些 Alias 设置，这些都可以保留。
+其他一些修改 Shell Prompt 的设置或者是修改 History 的设置都可以移去，让 zim 去接管这些设置工作。</p>
+<p>我使用自动安装脚本帮我安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh <span class="p">|</span> zsh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装完成后，我修改 <code>.zimrc</code> 的内容，</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Start configuration added by Zim install {{{</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># This is not sourced during shell startup, and it&#39;s only used to configure the</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># zimfw plugin manager.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Modules</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Sets sane Zsh built-in environment options.</span>
+</span></span><span class="line"><span class="cl">zmodule environment
+</span></span><span class="line"><span class="cl"><span class="c1"># Provides handy git aliases and functions.</span>
+</span></span><span class="line"><span class="cl">zmodule git
+</span></span><span class="line"><span class="cl"><span class="c1"># Applies correct bindkeys for input events.</span>
+</span></span><span class="line"><span class="cl">zmodule input
+</span></span><span class="line"><span class="cl"><span class="c1"># Sets a custom terminal title.</span>
+</span></span><span class="line"><span class="cl">zmodule termtitle
+</span></span><span class="line"><span class="cl"><span class="c1"># Utility aliases and functions. Adds colour to ls, grep and less.</span>
+</span></span><span class="line"><span class="cl">zmodule utility
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Prompt</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Exposes to prompts how long the last command took to execute, used by asciiship.</span>
+</span></span><span class="line"><span class="cl">zmodule duration-info
+</span></span><span class="line"><span class="cl"><span class="c1"># Exposes git repository status information to prompts, used by asciiship.</span>
+</span></span><span class="line"><span class="cl">zmodule git-info
+</span></span><span class="line"><span class="cl"><span class="c1"># Formats the current working directory to be used by prompts.</span>
+</span></span><span class="line"><span class="cl">zmodule prompt-pwd
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Completion</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Additional completion definitions for Zsh.</span>
+</span></span><span class="line"><span class="cl">zmodule zsh-users/zsh-completions --fpath src
+</span></span><span class="line"><span class="cl"><span class="c1"># Enables and configures smart and extensive tab completion.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># completion must be sourced after all modules that add completion definitions.</span>
+</span></span><span class="line"><span class="cl">zmodule completion
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Modules that must be initialized last</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Fish-like syntax highlighting for Zsh.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># zsh-users/zsh-syntax-highlighting must be sourced after completion</span>
+</span></span><span class="line"><span class="cl">zmodule zsh-users/zsh-syntax-highlighting
+</span></span><span class="line"><span class="cl"><span class="c1"># Fish-like history search (up arrow) for Zsh.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># zsh-users/zsh-history-substring-search must be sourced after zsh-users/zsh-syntax-highlighting</span>
+</span></span><span class="line"><span class="cl">zmodule zsh-users/zsh-history-substring-search
+</span></span><span class="line"><span class="cl"><span class="c1"># Fish-like autosuggestions for Zsh.</span>
+</span></span><span class="line"><span class="cl">zmodule zsh-users/zsh-autosuggestions
+</span></span><span class="line"><span class="cl"><span class="c1"># }}} End configuration added by Zim install</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Add by myself</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Exa</span>
+</span></span><span class="line"><span class="cl">zmodule exa
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Theme</span>
+</span></span><span class="line"><span class="cl">zmodule minimal
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>通过 <code>exec zsh</code> 重启 zsh，我的 zsh 就设置好了。</p>
+<h2 id="参考链接" class="headerLink">
+    <a href="#%e5%8f%82%e8%80%83%e9%93%be%e6%8e%a5" class="header-mark"></a>参考链接</h2><ul>
+<li><a href="https://zimfw.sh/docs/" target="_blank" rel="noopener noreferrer">zim 文档</a></li>
+<li><a href="https://www.nerdfonts.com/" target="_blank" rel="noopener noreferrer">Nerd Fonts</a></li>
+</ul>
+</div>
+
+        
+
+
+<h2>相关内容</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/posts/2022/11/shell-terminal-and-others/">Shell Terminal Console 词语解释</a>
+            </h2>
+        </div>
+    
+
+</div>
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-11-13</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/posts/2022/11/zimfw-or-ohmyzsh/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share">
+                <span><a href="#" onclick="return false;" title="分享到 Twitter" data-sharer="twitter" data-url="https://wowow005.github.io/posts/2022/11/zimfw-or-ohmyzsh/" data-title="mushi 的 zsh 配置 (不用 ohmyzsh 而用 zim)" data-via="mushi63882090" data-hashtags="shell,linux,mac"><i class="fab fa-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://wowow005.github.io/posts/2022/11/zimfw-or-ohmyzsh/" data-title="mushi 的 zsh 配置 (不用 ohmyzsh 而用 zim)" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Reddit" data-sharer="reddit" data-url="https://wowow005.github.io/posts/2022/11/zimfw-or-ohmyzsh/"><i class="fab fa-reddit fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 微博" data-sharer="weibo" data-url="https://wowow005.github.io/posts/2022/11/zimfw-or-ohmyzsh/" data-title="mushi 的 zsh 配置 (不用 ohmyzsh 而用 zim)"><i class="fab fa-weibo fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Blogger" data-sharer="blogger" data-url="https://wowow005.github.io/posts/2022/11/zimfw-or-ohmyzsh/" data-title="mushi 的 zsh 配置 (不用 ohmyzsh 而用 zim)" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Evernote" data-sharer="evernote" data-url="https://wowow005.github.io/posts/2022/11/zimfw-or-ohmyzsh/" data-title="mushi 的 zsh 配置 (不用 ohmyzsh 而用 zim)"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/shell/">shell</a>,&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/mac/">mac</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2022/11/shell-terminal-and-others/" class="prev" rel="prev" title="Shell Terminal Console 词语解释"><i class="fas fa-angle-left fa-fw"></i>Shell Terminal Console 词语解释</a></div>
+</div>
+<div id="comments"><div id="giscus"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://giscus.app/">giscus</a>.
+            </noscript></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.105.0-DEV">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://wowow005.github.io/" target="_blank" rel="noopener noreferrer">Mushi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/fuse/fuse.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/lib/topbar/topbar.min.js"></script><script type="text/javascript" src="/lib/pjax/pjax.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+
+<div class="pjax-assets"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":30},"comment":{"giscus":{"darkTheme":"dark","dataCategory":"Announcements","dataCategoryId":"DIC_kwDOHQdstc4CO2jI","dataEmitMetadata":"0","dataInputPosition":"top","dataLang":"zh-CN","dataMapping":"pathname","dataReactionsEnabled":"1","dataRepo":"wowow005/blogcomment","dataRepoId":"R_kgDOHQdstQ","dataStrict":"0","lightTheme":"light"}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true}};</script><script type="text/javascript" src="/js/giscus.min.js" defer></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript></div>
+</body>
+
+</html>
