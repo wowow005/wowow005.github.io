@@ -40,7 +40,7 @@ Linux 发行版安装了哪些 shells。</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo chsh -s /bin/zsh
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">chsh -s /bin/zsh
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>重新登录后，运行 <code>echo $SHELL</code> 检查一下输出是不是 <code>/bin/zsh</code></p>
@@ -107,6 +107,68 @@ Linux 发行版安装了哪些 shells。</p>
 <p>想要修改主题就在 <code>~/.zimrc</code> 中写入 <code>zmodule &lt;theme&gt;</code> 即可</p>
 <p>想要引入新的功能就在 <code>~/.zimrc</code> 中写入 <code>zmodule &lt;modules&gt;</code> 即可</p>
 <p>主题列表和模组列表可以在 <a href="https://zimfw.sh/docs/themes/" target="_blank" rel="noopener noreferrer">Themes</a> 和 <a href="https://zimfw.sh/docs/modules/" target="_blank" rel="noopener noreferrer">Modules</a> 上查看。</p>
+<p>可以通过 <code>zimfw</code> 这个命令执行 zim 的一些操作，我将命令帮助列在下面：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Usage: zimfw &lt;action&gt; [-q|-v]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Actions:
+</span></span><span class="line"><span class="cl">  build           Build /Users/mushi007/.zim/init.zsh and /Users/mushi007/.zim/login_init.zsh.
+</span></span><span class="line"><span class="cl">                  Also does check-dumpfile and compile. Use -v to also see their output.
+</span></span><span class="line"><span class="cl">  check-dumpfile  Does clean-dumpfile if new completion configuration needs to be dumped.
+</span></span><span class="line"><span class="cl">  clean           Clean all. Does both clean-compiled and clean-dumpfile.
+</span></span><span class="line"><span class="cl">  clean-compiled  Clean Zsh compiled files.
+</span></span><span class="line"><span class="cl">  clean-dumpfile  Clean completion dumpfile.
+</span></span><span class="line"><span class="cl">  compile         Compile Zsh files.
+</span></span><span class="line"><span class="cl">  help            Print this help.
+</span></span><span class="line"><span class="cl">  info            Print Zim and system info.
+</span></span><span class="line"><span class="cl">  list            List all modules currently defined in /Users/mushi007/.zimrc.
+</span></span><span class="line"><span class="cl">                  Use -v to also see the modules details.
+</span></span><span class="line"><span class="cl">  init            Same as install, but with output tailored to be used at terminal startup.
+</span></span><span class="line"><span class="cl">  install         Install new modules. Also does build, check-dumpfile and compile. Use -v to
+</span></span><span class="line"><span class="cl">                  also see their output, any on-pull output, and see skipped modules.
+</span></span><span class="line"><span class="cl">  uninstall       Delete unused modules. Prompts for confirmation. Use -q for quiet uninstall.
+</span></span><span class="line"><span class="cl">  update          Update current modules. Also does build, check-dumpfile and compile. Use -v
+</span></span><span class="line"><span class="cl">                  to also see their output, any on-pull output, and see skipped modules.
+</span></span><span class="line"><span class="cl">  upgrade         Upgrade zimfw. Also does compile. Use -v to also see its output.
+</span></span><span class="line"><span class="cl">  version         Print zimfw version.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Options:
+</span></span><span class="line"><span class="cl">  -q              Quiet (yes to prompts, and only outputs errors)
+</span></span><span class="line"><span class="cl">  -v              Verbose (outputs more details)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我们在 <code>.zimrc</code> 这个文件中写好了想要安装的插件后，就可以使用 <code>zimfw install</code> 命令安装插件。
+冗余的插件可以用 <code>zimfw uninstall</code> 指令删除。</p>
+<p>此外 <code>zimfw update</code> 和 <code>zimfw upgrade</code> 对应着升级所有插件或者升级 zim 本身。</p>
 <h2 id="卸载-zim" class="headerLink">
     <a href="#%e5%8d%b8%e8%bd%bd-zim" class="header-mark"></a>卸载 zim</h2><p>手动删除 <code>~/.zim</code> 文件夹和 <code>~/.zimrc</code> 文件，再删除掉 zim 往 <code>~/.zshrc</code> 中添加的内容即可。</p>
 <h2 id="一个安装-zim-的例子" class="headerLink">

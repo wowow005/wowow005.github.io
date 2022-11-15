@@ -34,7 +34,7 @@ Linux 发行版安装了哪些 shells。
 比如在 Ubuntu 上通过 apt 安装 zsh，接着将默认 Shell 切换至 zsh：
 
 ```sh { linenos=true, linenostart=1 }
-sudo chsh -s /bin/zsh
+chsh -s /bin/zsh
 ```
 
 重新登录后，运行 `echo $SHELL` 检查一下输出是不是 `/bin/zsh`
@@ -98,6 +98,42 @@ wget -nv -O - https://raw.githubusercontent.com/zimfw/install/master/install.zsh
 想要引入新的功能就在 `~/.zimrc` 中写入 `zmodule <modules>` 即可
 
 主题列表和模组列表可以在 [Themes](https://zimfw.sh/docs/themes/) 和 [Modules](https://zimfw.sh/docs/modules/) 上查看。
+
+可以通过 `zimfw` 这个命令执行 zim 的一些操作，我将命令帮助列在下面：
+
+```nil
+Usage: zimfw <action> [-q|-v]
+
+Actions:
+  build           Build /Users/mushi007/.zim/init.zsh and /Users/mushi007/.zim/login_init.zsh.
+                  Also does check-dumpfile and compile. Use -v to also see their output.
+  check-dumpfile  Does clean-dumpfile if new completion configuration needs to be dumped.
+  clean           Clean all. Does both clean-compiled and clean-dumpfile.
+  clean-compiled  Clean Zsh compiled files.
+  clean-dumpfile  Clean completion dumpfile.
+  compile         Compile Zsh files.
+  help            Print this help.
+  info            Print Zim and system info.
+  list            List all modules currently defined in /Users/mushi007/.zimrc.
+                  Use -v to also see the modules details.
+  init            Same as install, but with output tailored to be used at terminal startup.
+  install         Install new modules. Also does build, check-dumpfile and compile. Use -v to
+                  also see their output, any on-pull output, and see skipped modules.
+  uninstall       Delete unused modules. Prompts for confirmation. Use -q for quiet uninstall.
+  update          Update current modules. Also does build, check-dumpfile and compile. Use -v
+                  to also see their output, any on-pull output, and see skipped modules.
+  upgrade         Upgrade zimfw. Also does compile. Use -v to also see its output.
+  version         Print zimfw version.
+
+Options:
+  -q              Quiet (yes to prompts, and only outputs errors)
+  -v              Verbose (outputs more details)
+```
+
+我们在 `.zimrc` 这个文件中写好了想要安装的插件后，就可以使用 `zimfw install` 命令安装插件。
+冗余的插件可以用 `zimfw uninstall` 指令删除。
+
+此外 `zimfw update` 和 `zimfw upgrade` 对应着升级所有插件或者升级 zim 本身。
 
 
 ## 卸载 zim {#卸载-zim}
