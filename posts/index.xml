@@ -102,6 +102,7 @@ Linux 发行版安装了哪些 shells。</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>手动安装请参考：<a href="https://github.com/zimfw/zimfw#manual-installation" target="_blank" rel="noopener noreferrer">https://github.com/zimfw/zimfw#manual-installation</a></p>
+<p>视频演示见：<a href="https://www.bilibili.com/video/BV17D4y147br/?share_source=copy_web&amp;vd_source=893844a2162dff33932750ea4f64efc6" target="_blank" rel="noopener noreferrer">zim 一个轻量级 zsh 框架安装演示</a></p>
 <h2 id="使用-zim" class="headerLink">
     <a href="#%e4%bd%bf%e7%94%a8-zim" class="header-mark"></a>使用 zim</h2><p>我们通过修改 <code>~/.zimrc</code> 这个文件来启动 zim 的功能。</p>
 <p>想要修改主题就在 <code>~/.zimrc</code> 中写入 <code>zmodule &lt;theme&gt;</code> 即可</p>

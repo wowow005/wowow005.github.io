@@ -88,6 +88,8 @@ wget -nv -O - https://raw.githubusercontent.com/zimfw/install/master/install.zsh
 
 手动安装请参考：<https://github.com/zimfw/zimfw#manual-installation>
 
+视频演示见：[zim 一个轻量级 zsh 框架安装演示](https://www.bilibili.com/video/BV17D4y147br/?share_source=copy_web&vd_source=893844a2162dff33932750ea4f64efc6)
+
 
 ## 使用 zim {#使用-zim}
 
