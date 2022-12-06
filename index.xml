@@ -4,9 +4,38 @@
         <link>https://wowow005.github.io/</link>
         <description>Welcome to Mushi&#39;s blog.</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>goodhelper007@outlook.com (Mushi)</managingEditor>
-            <webMaster>goodhelper007@outlook.com (Mushi)</webMaster><lastBuildDate>Fri, 11 Nov 2022 06:02:00 &#43;0800</lastBuildDate>
+            <webMaster>goodhelper007@outlook.com (Mushi)</webMaster><lastBuildDate>Tue, 06 Dec 2022 15:10:00 &#43;0800</lastBuildDate>
             <atom:link href="https://wowow005.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>如何学习正则表达式</title>
+    <link>https://wowow005.github.io/posts/2022/12/regex-how-to-learn/</link>
+    <pubDate>Tue, 06 Dec 2022 15:10:00 &#43;0800</pubDate><author>
+        <name>Mushi</name>
+    </author><guid>https://wowow005.github.io/posts/2022/12/regex-how-to-learn/</guid>
+    <description><![CDATA[<h2 id="我的看法" class="headerLink">
+    <a href="#%e6%88%91%e7%9a%84%e7%9c%8b%e6%b3%95" class="header-mark"></a>我的看法</h2><p>阅读一篇讲述正则表达式的文章或者一本讲正则的书？这样的方法只能对正则表达式稍作了解。</p>
+<p>比较好的方法是对正则稍做了解后去解决一些实际的问题，也就是尝试自己写一些正则的题目。</p>
+<h2 id="对正则稍做了解" class="headerLink">
+    <a href="#%e5%af%b9%e6%ad%a3%e5%88%99%e7%a8%8d%e5%81%9a%e4%ba%86%e8%a7%a3" class="header-mark"></a>对正则稍做了解</h2><p><a href="https://zh.wikipedia.org/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F" target="_blank" rel="noopener noreferrer">正则表达式</a></p>
+<h2 id="regex-learn" class="headerLink">
+    <a href="#regex-learn" class="header-mark"></a>Regex Learn</h2><p><a href="https://regexlearn.com/learn" target="_blank" rel="noopener noreferrer">https://regexlearn.com/learn</a> 这个网站通过 50 多个例子逐步介绍了下关于正则表达式的基本内容，
+花 30 分钟就可以做完全部的例题，这时候你就可以对正则表达式有初步的理解了。</p>
+<h2 id="regex-101" class="headerLink">
+    <a href="#regex-101" class="header-mark"></a>Regex 101</h2><p><a href="https://regex101.com/quiz" target="_blank" rel="noopener noreferrer">https://regex101.com/quiz</a> 这个网站上有 28 道正则表达式的题目，试着独立解决前 10 道问题，如果不参考
+答案的话，会花费挺长的时间，但这是值得的。</p>
+<p>我觉得其中比较值得思考的问题如下：</p>
+<ul>
+<li>如何用正则表达式表示 “或” “且” “非” 这几种逻辑关系</li>
+<li>学会分组</li>
+</ul>
+<h2 id="相关链接" class="headerLink">
+    <a href="#%e7%9b%b8%e5%85%b3%e9%93%be%e6%8e%a5" class="header-mark"></a>相关链接</h2><ul>
+<li><a href="https://www.regular-expressions.info/" target="_blank" rel="noopener noreferrer">regular-expressions</a></li>
+<li><a href="https://regexlearn.com/learn" target="_blank" rel="noopener noreferrer">regex learn</a></li>
+<li><a href="https://regex101.com/quiz" target="_blank" rel="noopener noreferrer">regex101</a></li>
+</ul>
+]]></description>
+</item><item>
     <title>mushi 的 zsh 配置 (不用 ohmyzsh 而用 zim)</title>
     <link>https://wowow005.github.io/posts/2022/11/zimfw-or-ohmyzsh/</link>
     <pubDate>Fri, 11 Nov 2022 06:02:00 &#43;0800</pubDate><author>
