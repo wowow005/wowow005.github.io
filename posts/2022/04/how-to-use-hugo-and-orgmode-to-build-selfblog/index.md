@@ -87,13 +87,13 @@
 ### `ox-hugo` 的使用与配置 {#ox-hugo-的使用与配置}
 
 
-#### 使用 `ox-hugo` <span class="tag"><span class="ATTACH">ATTACH</span></span> {#使用-ox-hugo}
+#### 使用 `ox-hugo` {#使用-ox-hugo}
 
 如果你对 `emacs` 很熟悉的话, 想必安装不难. 之后在写一篇 `org` 文章的时候按快捷键
 `C-c+C-e` 就会呼出交互式的导出选项了, 你也可以 `M-x org-export-dispatch`, 导出选项中有一
 项是 `Export to Hugo-compatible Markdown`, 就是我们要用的.
 
-{{< figure src="/Users/mushi007/MEGA/org/.attach/f0/27ac3c-aae9-4f94-b4b6-3e8ca5021db9/2023-01-13-14-42-00org %E5%AF%BC%E5%87%BA hugo %E5%85%BC%E5%AE%B9%E7%9A%84 Markdown %E6%A0%BC%E5%BC%8F.png" >}}
+{{< figure src="/ox-hugo/zimspeed.svg" >}}
 
 这时候, 如果我们按 `H` 再按 `h` 即可将 `org` 文件导出为 `Markdown` 文件了.
 
