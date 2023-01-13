@@ -7,7 +7,7 @@
 
 [zim](https://zimfw.sh/) 和 omz 发挥同样的作用，只是它比 omz 快很多，通过下面这张图可以看出 zim 的速度优势。
 
-{{< figure src="/ox-hugo/zimspeed.svg" >}}
+{{< figure src="/ox-hugo/007.svg" >}}
 
 
 ## 准备阶段 {#准备阶段}
