@@ -1,11 +1,6 @@
 # 23 年 1 月 11 日记
 
 
-## test file <span class="tag"><span class="ATTACH">ATTACH</span></span> {#test-file}
-
-{{< figure src="/ox-hugo/2023-01-13-14-23-03image_2022-07-08_20-47-38.png" >}}
-
-
 ## 最近看的书 {#最近看的书}
 
 
