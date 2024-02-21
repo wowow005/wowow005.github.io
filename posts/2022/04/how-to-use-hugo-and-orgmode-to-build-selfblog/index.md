@@ -93,7 +93,7 @@
 `C-c+C-e` 就会呼出交互式的导出选项了, 你也可以 `M-x org-export-dispatch`, 导出选项中有一
 项是 `Export to Hugo-compatible Markdown`, 就是我们要用的.
 
-{{< figure src="/ox-hugo/001.png" >}}
+{{< figure src="/attchments/001.png" >}}
 
 这时候, 如果我们按 `H` 再按 `h` 即可将 `org` 文件导出为 `Markdown` 文件了.
 
@@ -358,7 +358,7 @@ hugo serve
 
 示意图如下:
 
-{{< figure src="/ox-hugo/002.png" >}}
+{{< figure src="/attchments/002.png" >}}
 
 
 ## 第六步 将你的博客部署到 Github {#第六步-将你的博客部署到-github}
@@ -368,7 +368,7 @@ hugo serve
 
 如下图所示, 要注意的就是仓库名要和你的 `Github` 用户名一致
 
-{{< figure src="/ox-hugo/003.png" >}}
+{{< figure src="/attchments/003.png" >}}
 
 
 ### 构建博客网站 {#构建博客网站}
@@ -454,7 +454,7 @@ chmod 700 ./deploy.sh
 
 是的, 你把 `public` 上传后, 需要等待 `Git Action` 完成 `Github pages` 的构建.
 
-{{< figure src="/ox-hugo/004.png" >}}
+{{< figure src="/attchments/004.png" >}}
 
 之后访问你的 `Github pages` 网址即可看到你的博客啦.
 

@@ -7,7 +7,7 @@
 
 [zim](https://zimfw.sh/) 和 omz 发挥同样的作用，只是它比 omz 快很多，通过下面这张图可以看出 zim 的速度优势。
 
-{{< figure src="/ox-hugo/007.svg" >}}
+![](/attchments/007.svg" >}}
 
 
 ## 准备阶段 {#准备阶段}
@@ -147,7 +147,7 @@ Options:
 
 我在 Fedora 中安装了 zsh，切换到 zsh 后它会自动生成一些 zsh 的启动文件如下图：
 
-{{< figure src="/ox-hugo/008.png" >}}
+![](/attchments/008.png)
 
 由于我是在 docker 中演示的，所以 `.zshrc` 文件中没什么重要的设置，我可以把 `.zshrc` 文件删除，
 让 zim 给我创建一个新的 `.zshrc` 文件，如果你没有删除的话，安装后 zim 将把它的设置写入在 `.zshrc`
