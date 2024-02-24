@@ -4,7 +4,28 @@
         <link>https://wowow005.github.io/tags/</link>
         <description>Tags - 标签 - 牧师的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>goodhelper007@outlook.com (Mushi)</managingEditor>
-            <webMaster>goodhelper007@outlook.com (Mushi)</webMaster><lastBuildDate>Wed, 21 Feb 2024 16:21:00 &#43;0800</lastBuildDate><atom:link href="https://wowow005.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>goodhelper007@outlook.com (Mushi)</webMaster><lastBuildDate>Thu, 22 Feb 2024 00:03:00 &#43;0800</lastBuildDate><atom:link href="https://wowow005.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>kde</title>
+    <link>https://wowow005.github.io/tags/kde/</link>
+    <pubDate>Thu, 22 Feb 2024 00:03:00 &#43;0800</pubDate><author>
+        <name>Mushi</name>
+    </author><guid>https://wowow005.github.io/tags/kde/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>linux</title>
+    <link>https://wowow005.github.io/tags/linux/</link>
+    <pubDate>Thu, 22 Feb 2024 00:03:00 &#43;0800</pubDate><author>
+        <name>Mushi</name>
+    </author><guid>https://wowow005.github.io/tags/linux/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>opensuse</title>
+    <link>https://wowow005.github.io/tags/opensuse/</link>
+    <pubDate>Thu, 22 Feb 2024 00:03:00 &#43;0800</pubDate><author>
+        <name>Mushi</name>
+    </author><guid>https://wowow005.github.io/tags/opensuse/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>bug</title>
     <link>https://wowow005.github.io/tags/bug/</link>
     <pubDate>Wed, 21 Feb 2024 16:21:00 &#43;0800</pubDate><author>
@@ -12,25 +33,11 @@
     </author><guid>https://wowow005.github.io/tags/bug/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>kde</title>
-    <link>https://wowow005.github.io/tags/kde/</link>
-    <pubDate>Wed, 21 Feb 2024 16:21:00 &#43;0800</pubDate><author>
-        <name>Mushi</name>
-    </author><guid>https://wowow005.github.io/tags/kde/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
     <title>diary</title>
     <link>https://wowow005.github.io/tags/diary/</link>
     <pubDate>Wed, 08 Feb 2023 22:01:00 &#43;0800</pubDate><author>
         <name>Mushi</name>
     </author><guid>https://wowow005.github.io/tags/diary/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>linux</title>
-    <link>https://wowow005.github.io/tags/linux/</link>
-    <pubDate>Tue, 06 Dec 2022 15:10:00 &#43;0800</pubDate><author>
-        <name>Mushi</name>
-    </author><guid>https://wowow005.github.io/tags/linux/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>regex</title>
@@ -66,13 +73,6 @@
     <pubDate>Sat, 23 Apr 2022 02:24:00 &#43;0800</pubDate><author>
         <name>Mushi</name>
     </author><guid>https://wowow005.github.io/tags/blog/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>emacs</title>
-    <link>https://wowow005.github.io/tags/emacs/</link>
-    <pubDate>Sat, 23 Apr 2022 02:24:00 &#43;0800</pubDate><author>
-        <name>Mushi</name>
-    </author><guid>https://wowow005.github.io/tags/emacs/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
