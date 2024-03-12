@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>bug - 标签 - 牧师的博客</title>
+        <title>Bug - 标签 - 牧师的博客</title>
         <link>https://wowow005.github.io/tags/bug/</link>
-        <description>bug - 标签 - 牧师的博客</description>
+        <description>Bug - 标签 - 牧师的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>goodhelper007@outlook.com (Mushi)</managingEditor>
             <webMaster>goodhelper007@outlook.com (Mushi)</webMaster><lastBuildDate>Wed, 21 Feb 2024 16:21:00 &#43;0800</lastBuildDate><atom:link href="https://wowow005.github.io/tags/bug/" rel="self" type="application/rss+xml" /><item>
     <title>KDE Plasma 桌面 &#34;KOrganizer&#34; 等软件关闭后仍然占用约 800 M 内存</title>

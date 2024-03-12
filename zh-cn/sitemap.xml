@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://wowow005.github.io/categories/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://wowow005.github.io/categories/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://wowow005.github.io/en/categories/"
@@ -11,13 +11,13 @@
                     hreflang="zh-cn"
                     href="https://wowow005.github.io/categories/"
                     /></url><url>
-            <loc>https://wowow005.github.io/tags/kde/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/categories/learning/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/tags/linux/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/tags/opensuse/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/posts/20240222t000349--opensuse-tumbleweed-%E5%92%8C-kde-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B__kde_linux_opensuse/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/posts/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/tags/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://wowow005.github.io/tags/kde/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://wowow005.github.io/categories/learning/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://wowow005.github.io/tags/linux/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://wowow005.github.io/tags/opensuse/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://wowow005.github.io/posts/20240222t000349--opensuse-tumbleweed-%E5%92%8C-kde-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B__kde_linux_opensuse/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://wowow005.github.io/posts/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://wowow005.github.io/tags/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://wowow005.github.io/en/tags/"
@@ -26,7 +26,7 @@
                     hreflang="zh-cn"
                     href="https://wowow005.github.io/tags/"
                     /></url><url>
-            <loc>https://wowow005.github.io/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://wowow005.github.io/</loc><lastmod>2024-02-24T11:08:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://wowow005.github.io/en/"
@@ -35,9 +35,9 @@
                     hreflang="zh-cn"
                     href="https://wowow005.github.io/"
                     /></url><url>
-            <loc>https://wowow005.github.io/tags/bug/</loc><lastmod>2024-02-21T16:53:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/categories/bug/</loc><lastmod>2024-02-21T16:53:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/posts/20240221t162109--kde-plasma-%E6%A1%8C%E9%9D%A2-korganizer-%E7%AD%89%E8%BD%AF%E4%BB%B6%E5%85%B3%E9%97%AD%E5%90%8E%E4%BB%8D%E7%84%B6%E5%8D%A0%E7%94%A8%E7%BA%A6-800-m-%E5%86%85%E5%AD%98__bug_kde/</loc><lastmod>2024-02-21T16:53:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/tags/bug/</loc><lastmod>2024-02-21T16:53:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://wowow005.github.io/categories/bug/</loc><lastmod>2024-02-21T16:53:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://wowow005.github.io/posts/20240221t162109--kde-plasma-%E6%A1%8C%E9%9D%A2-korganizer-%E7%AD%89%E8%BD%AF%E4%BB%B6%E5%85%B3%E9%97%AD%E5%90%8E%E4%BB%8D%E7%84%B6%E5%8D%A0%E7%94%A8%E7%BA%A6-800-m-%E5%86%85%E5%AD%98__bug_kde/</loc><lastmod>2024-02-21T16:53:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://wowow005.github.io/posts/2023/02/20230208/</loc><lastmod>2023-11-17T21:51:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://wowow005.github.io/tags/diary/</loc><lastmod>2023-11-17T21:51:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://wowow005.github.io/categories/life/</loc><lastmod>2023-11-17T21:51:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

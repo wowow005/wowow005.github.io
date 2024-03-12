@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>mac - 标签 - 牧师的博客</title>
+        <title>Mac - 标签 - 牧师的博客</title>
         <link>https://wowow005.github.io/tags/mac/</link>
-        <description>mac - 标签 - 牧师的博客</description>
+        <description>Mac - 标签 - 牧师的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>goodhelper007@outlook.com (Mushi)</managingEditor>
             <webMaster>goodhelper007@outlook.com (Mushi)</webMaster><lastBuildDate>Fri, 11 Nov 2022 06:02:00 &#43;0800</lastBuildDate><atom:link href="https://wowow005.github.io/tags/mac/" rel="self" type="application/rss+xml" /><item>
     <title>mushi 的 zsh 配置 (不用 ohmyzsh 而用 zim)</title>
@@ -177,7 +177,6 @@ Linux 发行版安装了哪些 shells。</p>
         loading="lazy"
         src="/attchments/008.png"
         srcset="/attchments/008.png, /attchments/008.png 1.5x, /attchments/008.png 2x"
-        alt="/attchments/008.png"
         title="/attchments/008.png" ></figure></p>
 <p>由于我是在 docker 中演示的，所以 <code>.zshrc</code> 文件中没什么重要的设置，我可以把 <code>.zshrc</code> 文件删除，
 让 zim 给我创建一个新的 <code>.zshrc</code> 文件，如果你没有删除的话，安装后 zim 将把它的设置写入在 <code>.zshrc</code>
