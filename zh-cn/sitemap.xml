@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://wowow005.github.io/categories/</loc><lastmod>2024-06-22T17:52:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://wowow005.github.io/categories/</loc><lastmod>2024-06-22T18:22:24&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://wowow005.github.io/en/categories/"
@@ -15,8 +15,8 @@
             <loc>https://wowow005.github.io/tags/git/</loc><lastmod>2024-06-22T17:52:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://wowow005.github.io/categories/learning/</loc><lastmod>2024-06-22T17:52:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://wowow005.github.io/tags/org/</loc><lastmod>2024-06-22T17:52:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/posts/</loc><lastmod>2024-06-22T17:52:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/tags/</loc><lastmod>2024-06-22T17:52:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://wowow005.github.io/posts/</loc><lastmod>2024-06-22T18:22:24&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/tags/</loc><lastmod>2024-06-22T18:22:24&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://wowow005.github.io/en/tags/"
@@ -26,7 +26,7 @@
                     href="https://wowow005.github.io/tags/"
                     /></url><url>
             <loc>https://wowow005.github.io/tags/web/</loc><lastmod>2024-06-22T17:52:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://wowow005.github.io/</loc><lastmod>2024-06-22T17:52:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://wowow005.github.io/</loc><lastmod>2024-06-22T18:22:24&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://wowow005.github.io/en/"
@@ -36,6 +36,11 @@
                     href="https://wowow005.github.io/"
                     /></url><url>
             <loc>https://wowow005.github.io/posts/2024/06/20240622t162005--%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-hugo-%E5%92%8C-org-mode-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2__emacs_git_org_web/</loc><lastmod>2024-06-22T17:52:19&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/categories/reading/</loc><lastmod>2024-06-22T18:22:24&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/tags/%E6%96%87%E5%AD%A6/</loc><lastmod>2024-06-22T18:22:24&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/posts/2024/05/20240508t204553--%E6%82%89%E8%BE%BE%E5%A4%9A__%E5%AE%97%E6%95%99_%E6%96%87%E5%AD%A6_%E9%98%85%E8%AF%BB/</loc><lastmod>2024-06-22T18:22:24&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/tags/%E9%98%85%E8%AF%BB/</loc><lastmod>2024-06-22T18:22:24&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://wowow005.github.io/tags/%E5%AE%97%E6%95%99/</loc><lastmod>2024-06-22T18:22:24&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://wowow005.github.io/authors/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
