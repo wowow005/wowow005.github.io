@@ -1,0 +1,36 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - 标签 - 牧师的博客</title>
+        <link>https://wowow005.github.io/tags/</link>
+        <description>Tags - 标签 - 牧师的博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>goodhelper007@outlook.com (Mushi)</managingEditor>
+            <webMaster>goodhelper007@outlook.com (Mushi)</webMaster><lastBuildDate>Sat, 22 Jun 2024 16:20:00 &#43;0800</lastBuildDate><atom:link href="https://wowow005.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Emacs</title>
+    <link>https://wowow005.github.io/tags/emacs/</link>
+    <pubDate>Sat, 22 Jun 2024 16:20:00 &#43;0800</pubDate><author>
+        <name>Mushi</name>
+    </author><guid>https://wowow005.github.io/tags/emacs/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Git</title>
+    <link>https://wowow005.github.io/tags/git/</link>
+    <pubDate>Sat, 22 Jun 2024 16:20:00 &#43;0800</pubDate><author>
+        <name>Mushi</name>
+    </author><guid>https://wowow005.github.io/tags/git/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Org</title>
+    <link>https://wowow005.github.io/tags/org/</link>
+    <pubDate>Sat, 22 Jun 2024 16:20:00 &#43;0800</pubDate><author>
+        <name>Mushi</name>
+    </author><guid>https://wowow005.github.io/tags/org/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Web</title>
+    <link>https://wowow005.github.io/tags/web/</link>
+    <pubDate>Sat, 22 Jun 2024 16:20:00 &#43;0800</pubDate><author>
+        <name>Mushi</name>
+    </author><guid>https://wowow005.github.io/tags/web/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>
