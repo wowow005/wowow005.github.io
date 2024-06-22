@@ -3,12 +3,12 @@
         <title>Learning - 分类 - 牧师的博客</title>
         <link>https://wowow005.github.io/categories/learning/</link>
         <description>Learning - 分类 - 牧师的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>goodhelper007@outlook.com (Mushi)</managingEditor>
-            <webMaster>goodhelper007@outlook.com (Mushi)</webMaster><lastBuildDate>Sat, 22 Jun 2024 16:20:00 &#43;0800</lastBuildDate><atom:link href="https://wowow005.github.io/categories/learning/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>goodhelper005@gmail.com (Vicar17)</managingEditor>
+            <webMaster>goodhelper005@gmail.com (Vicar17)</webMaster><lastBuildDate>Sat, 22 Jun 2024 16:20:00 &#43;0800</lastBuildDate><atom:link href="https://wowow005.github.io/categories/learning/" rel="self" type="application/rss+xml" /><item>
     <title>如何使用 hugo 和 org-mode 搭建个人博客</title>
     <link>https://wowow005.github.io/posts/2024/06/20240622t162005--%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-hugo-%E5%92%8C-org-mode-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2__emacs_git_org_web/</link>
     <pubDate>Sat, 22 Jun 2024 16:20:00 &#43;0800</pubDate><author>
-        <name>Mushi</name>
+        <name>Vicar17</name>
     </author><guid>https://wowow005.github.io/posts/2024/06/20240622t162005--%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-hugo-%E5%92%8C-org-mode-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2__emacs_git_org_web/</guid>
     <description><![CDATA[<h2 id="关于本文" class="headerLink">
     <a href="#%e5%85%b3%e4%ba%8e%e6%9c%ac%e6%96%87" class="header-mark" aria-label="Header mark for '关于本文'"></a>关于本文</h2><p>这篇文章介绍使用 <code>hugo</code> 和 <code>github pages</code> 来搭建一个在线的个人静态博客。</p>
@@ -1398,7 +1398,7 @@
     </div>
   </div>
   <pre style="counter-reset: codeblock;" class="tw-block tw-m-0 tw-p-0"><code 
-    id="codeblock-id-1" 
+    id="codeblock-id-13" 
     class="
       chroma 
       !tw-block 
@@ -1506,7 +1506,7 @@
     </div>
   </div>
   <pre style="counter-reset: codeblock;" class="tw-block tw-m-0 tw-p-0"><code 
-    id="codeblock-id-2" 
+    id="codeblock-id-14" 
     class="
       chroma 
       !tw-block 
@@ -1622,7 +1622,7 @@
     </div>
   </div>
   <pre style="counter-reset: codeblock;" class="tw-block tw-m-0 tw-p-0"><code 
-    id="codeblock-id-3" 
+    id="codeblock-id-15" 
     class="
       chroma 
       !tw-block 
@@ -1721,7 +1721,7 @@
     </div>
   </div>
   <pre style="counter-reset: codeblock;" class="tw-block tw-m-0 tw-p-0"><code 
-    id="codeblock-id-4" 
+    id="codeblock-id-16" 
     class="
       chroma 
       !tw-block 
@@ -1834,7 +1834,7 @@
     </div>
   </div>
   <pre style="counter-reset: codeblock;" class="tw-block tw-m-0 tw-p-0"><code 
-    id="codeblock-id-5" 
+    id="codeblock-id-1" 
     class="
       chroma 
       !tw-block 
@@ -1956,7 +1956,7 @@
     </div>
   </div>
   <pre style="counter-reset: codeblock;" class="tw-block tw-m-0 tw-p-0"><code 
-    id="codeblock-id-6" 
+    id="codeblock-id-2" 
     class="
       chroma 
       !tw-block 
@@ -1993,7 +1993,7 @@
     <title>openSUSE Tumbleweed 和 KDE 的个人安装过程</title>
     <link>https://wowow005.github.io/posts/2024/02/20240222t000349--opensuse-tumbleweed-%E5%92%8C-kde-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B__kde_linux_opensuse/</link>
     <pubDate>Thu, 22 Feb 2024 00:03:00 &#43;0800</pubDate><author>
-        <name>Mushi</name>
+        <name>Vicar17</name>
     </author><guid>https://wowow005.github.io/posts/2024/02/20240222t000349--opensuse-tumbleweed-%E5%92%8C-kde-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B__kde_linux_opensuse/</guid>
     <description><![CDATA[<h2 id="安装之前" class="headerLink">
     <a href="#%e5%ae%89%e8%a3%85%e4%b9%8b%e5%89%8d" class="header-mark" aria-label="Header mark for '安装之前'"></a>安装之前</h2><p>没什么特别好说的，我喜欢使用 <a href="https://www.ventoy.net/en/index.html" target="_blank" rel="noopener noreferrer">ventoy</a> 制作启动 U 盘，之后将 <a href="https://get.opensuse.org/tumbleweed/" target="_blank" rel="noopener noreferrer">openSUSE 风滚草</a> 的镜像拷贝进去就可以了。</p>

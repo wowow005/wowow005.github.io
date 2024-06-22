@@ -3,12 +3,12 @@
         <title>Opensuse - 标签 - 牧师的博客</title>
         <link>https://wowow005.github.io/tags/opensuse/</link>
         <description>Opensuse - 标签 - 牧师的博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>goodhelper007@outlook.com (Mushi)</managingEditor>
-            <webMaster>goodhelper007@outlook.com (Mushi)</webMaster><lastBuildDate>Thu, 22 Feb 2024 00:03:00 &#43;0800</lastBuildDate><atom:link href="https://wowow005.github.io/tags/opensuse/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>goodhelper005@gmail.com (Vicar17)</managingEditor>
+            <webMaster>goodhelper005@gmail.com (Vicar17)</webMaster><lastBuildDate>Thu, 22 Feb 2024 00:03:00 &#43;0800</lastBuildDate><atom:link href="https://wowow005.github.io/tags/opensuse/" rel="self" type="application/rss+xml" /><item>
     <title>openSUSE Tumbleweed 和 KDE 的个人安装过程</title>
     <link>https://wowow005.github.io/posts/2024/02/20240222t000349--opensuse-tumbleweed-%E5%92%8C-kde-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B__kde_linux_opensuse/</link>
     <pubDate>Thu, 22 Feb 2024 00:03:00 &#43;0800</pubDate><author>
-        <name>Mushi</name>
+        <name>Vicar17</name>
     </author><guid>https://wowow005.github.io/posts/2024/02/20240222t000349--opensuse-tumbleweed-%E5%92%8C-kde-%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B__kde_linux_opensuse/</guid>
     <description><![CDATA[<h2 id="安装之前" class="headerLink">
     <a href="#%e5%ae%89%e8%a3%85%e4%b9%8b%e5%89%8d" class="header-mark" aria-label="Header mark for '安装之前'"></a>安装之前</h2><p>没什么特别好说的，我喜欢使用 <a href="https://www.ventoy.net/en/index.html" target="_blank" rel="noopener noreferrer">ventoy</a> 制作启动 U 盘，之后将 <a href="https://get.opensuse.org/tumbleweed/" target="_blank" rel="noopener noreferrer">openSUSE 风滚草</a> 的镜像拷贝进去就可以了。</p>
