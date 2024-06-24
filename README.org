@@ -1,0 +1,45 @@
+#+TITLE: My Personal Blog
+#+AUTHOR: Your Name
+#+DATE: 2024-06-25
+#+OPTIONS: toc:nil
+
+* My Personal Blog
+
+Welcome to my personal blog hosted on GitHub Pages!
+
+* Introduction
+
+This blog is dedicated to sharing my thoughts on programming, technology, and life. I use Hugo to generate the static site, and it's based on the [[https://github.com/HEIGE-PCloud/DoIt][DoIt]] theme.
+
+* Deployment
+
+To deploy this blog:
+1. Clone this repository: =git clone https://github.com/username/blog.git=
+2. Install Hugo: =brew install hugo= (for macOS, for other platforms refer to Hugo's installation guide)
+3. Build the site: =hugo=
+4. Deploy to GitHub Pages: Commit and push changes to the =main= branch.
+
+* Features
+
+- Responsive design
+- Syntax highlighting
+- Tags and categories for posts
+- RSS feed for subscriptions
+
+* Contact
+
+- Email: [[goodhelper005@gmail.com][example@email.com]]
+- Twitter: [[https://twitter.com/mushi63882090][@Mushi005]]
+
+* License
+
+This project is licensed under the MIT License. See the [[file:./LICENSE][LICENSE]] file for details.
+
+* Screenshots
+
+[[file:./screenshots/home.png]]
+[[file:./screenshots/post.png]]
+
+* Updates
+
+- **v1.0.0 (2023-05-15):** Initial release.
