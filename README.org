@@ -37,9 +37,10 @@ This project is licensed under the MIT License. See the [[file:./LICENSE][LICENS
 
 * Screenshots
 
-[[file:screenshots/home.png][Homepage]]
-[[file:screenshots/post.png][Postpage]]
+- [[file:screenshots/home.png][Homepage]]
+
+- [[file:screenshots/post.png][Postpage]]
 
 * Updates
 
-- **v1.0.0 (2024-06-25):** Initial release.
+- *v1.0.0 (2024-06-25):* Initial release.
