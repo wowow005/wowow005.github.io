@@ -37,8 +37,8 @@ This project is licensed under the MIT License. See the [[file:./LICENSE][LICENS
 
 * Screenshots
 
-[[file:./screenshots/home.png]]
-[[file:./screenshots/post.png]]
+[[file:screenshots/home.png][Homepage]]
+[[file:screenshots/post.png][Postpage]]
 
 * Updates
 
