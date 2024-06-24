@@ -1,11 +1,11 @@
 #+TITLE: My Personal Blog
-#+AUTHOR: Your Name
+#+AUTHOR: vicar17
 #+DATE: 2024-06-25
 #+OPTIONS: toc:nil
 
-* My Personal Blog
+* Hi!
 
-Welcome to my personal blog hosted on GitHub Pages!
+Welcome to my [[https://wowow005.github.io/][personal blog]] hosted on GitHub Pages!
 
 * Introduction
 
@@ -28,7 +28,7 @@ To deploy this blog:
 
 * Contact
 
-- Email: [[goodhelper005@gmail.com][example@email.com]]
+- Email: [[goodhelper005@gmail.com][goodhelper005@gmail.com]]
 - Twitter: [[https://twitter.com/mushi63882090][@Mushi005]]
 
 * License
@@ -42,4 +42,4 @@ This project is licensed under the MIT License. See the [[file:./LICENSE][LICENS
 
 * Updates
 
-- **v1.0.0 (2023-05-15):** Initial release.
+- **v1.0.0 (2024-06-25):** Initial release.
