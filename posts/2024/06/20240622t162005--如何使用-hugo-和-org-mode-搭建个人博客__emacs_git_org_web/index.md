@@ -25,7 +25,6 @@ ox-hugo 是个 emacs 插件, 他将 org 内容转换成 Hugo 兼容的 Markdown 
 
 ```emacs-lisp
 (with-eval-after-load 'ox
-
   (require 'ox-hugo))
 ```
 
@@ -34,11 +33,8 @@ ox-hugo 是个 emacs 插件, 他将 org 内容转换成 Hugo 兼容的 Markdown 
 
 ```emacs-lisp
 (use-package ox-hugo
-
   :ensure t   ;Auto-install the package from Melpa
-
   :pin melpa  ;`package-archives' should already have ("melpa" . "https://melpa.org/packages/")
-
   :after ox)
 ```
 
@@ -83,21 +79,13 @@ cd blog
 
 ```shell
 ./
-
 ├── archetypes
-
 │   └── default.md
-
 ├── config.toml
-
 ├── content
-
 ├── data
-
 ├── layouts
-
 ├── static
-
 └── themes
 ```
 

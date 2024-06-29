@@ -415,7 +415,6 @@
       tw-overflow-x-auto
       tw-scrollbar-thin
       "><span class="line"><span class="cl"><span class="p">(</span><span class="nb">with-eval-after-load</span> <span class="ss">&#39;ox</span>
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;ox-hugo</span><span class="p">))</span></span></span></code></pre>
 </div>
 <h4 id="通过-use-package-安装" class="headerLink">
@@ -514,11 +513,8 @@
       tw-overflow-x-auto
       tw-scrollbar-thin
       "><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">ox-hugo</span>
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="nb">:ensure</span> <span class="no">t</span>   <span class="c1">;Auto-install the package from Melpa</span>
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="nb">:pin</span> <span class="nv">melpa</span>  <span class="c1">;`package-archives&#39; should already have (&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;)</span>
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="nb">:after</span> <span class="nv">ox</span><span class="p">)</span></span></span></code></pre>
 </div>
 <h4 id="在-doom-emacs-中安装" class="headerLink">
@@ -921,21 +917,13 @@
       tw-overflow-x-auto
       tw-scrollbar-thin
       "><span class="line"><span class="cl">./
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">├── archetypes
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">│   └── default.md
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">├── config.toml
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">├── content
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">├── data
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">├── layouts
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">├── static
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">└── themes</span></span></code></pre>
 </div>
 <h2 id="3-dot-选择一个自己喜欢的-hugo-主题安装" class="headerLink">
