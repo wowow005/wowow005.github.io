@@ -4,19 +4,19 @@
         <link>https://wowow005.github.io/categories/</link>
         <description>Categories - 分类 - 牧师的博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>goodhelper005@gmail.com (Vicar17)</managingEditor>
-            <webMaster>goodhelper005@gmail.com (Vicar17)</webMaster><lastBuildDate>Sat, 22 Jun 2024 16:20:00 &#43;0800</lastBuildDate><atom:link href="https://wowow005.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>goodhelper005@gmail.com (Vicar17)</webMaster><lastBuildDate>Tue, 25 Jun 2024 23:43:00 &#43;0800</lastBuildDate><atom:link href="https://wowow005.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Reading</title>
+    <link>https://wowow005.github.io/categories/reading/</link>
+    <pubDate>Tue, 25 Jun 2024 23:43:00 &#43;0800</pubDate><author>
+        <name>Vicar17</name>
+    </author><guid>https://wowow005.github.io/categories/reading/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Learning</title>
     <link>https://wowow005.github.io/categories/learning/</link>
     <pubDate>Sat, 22 Jun 2024 16:20:00 &#43;0800</pubDate><author>
         <name>Vicar17</name>
     </author><guid>https://wowow005.github.io/categories/learning/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Reading</title>
-    <link>https://wowow005.github.io/categories/reading/</link>
-    <pubDate>Wed, 08 May 2024 20:45:00 &#43;0800</pubDate><author>
-        <name>Vicar17</name>
-    </author><guid>https://wowow005.github.io/categories/reading/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Bug</title>
