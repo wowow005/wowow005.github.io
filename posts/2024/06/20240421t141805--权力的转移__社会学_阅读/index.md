@@ -1,9 +1,6 @@
 # 《权力的转移》
 
 
-\##+date: <span class="timestamp-wrapper"><span class="timestamp">[2024-06-29 星期六 21:32]</span></span>
-
-
 ## 《权力的转移》 {#权力的转移}
 
 -   【美】 阿尔文·托父勒 著
